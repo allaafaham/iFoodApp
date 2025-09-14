@@ -5,6 +5,7 @@ import Menubar from "./components/Menubar/Menubar.jsx";
 import { Route, Routes } from 'react-router-dom';
 import ListFood from './pages/ListFood/ListFood';
 import Orders from './pages/Orders/Orders';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
             <Sidebar sidebarVisible={sidebarVisible}/>
             <div id="page-content-wrapper">
                 <Menubar toggleSidebar = {toggleSidebar}/>
+                <ToastContainer />
                 <div className="container-fluid">
                     <Routes>
                         <Route path='/add' element={<AddFood/>}/>

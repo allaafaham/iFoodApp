@@ -19,7 +19,6 @@ import java.util.List;
 @AllArgsConstructor
 @CrossOrigin("*")
 public class FoodController {
-    private final chill;
     private final FoodService foodService;
 
     @PostMapping
